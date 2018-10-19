@@ -9,10 +9,16 @@ import { Meeting } from "src/app/model/data";
 })
 export class MainComponent implements OnInit {
   lastMeeting: Meeting;
-
-  constructor(private servData: DataService) {}
+  meetings: Meeting[];
+  constructor(private servData: DataService) {
+    this.meetings = [];
+  }
 
   ngOnInit() {
     this.servData.getLastMeeting().subscribe(m => (this.lastMeeting = m));
+  }
+  showAll() {
+    console.log("enterrr");
+    this.servData.getMeetings().subscribe(d => (this.meetings = d));
   }
 }

@@ -3,9 +3,12 @@
   "description":"Convocatoria para Chinchon ",
   "doc":"chin0.pdf"
   },
-  {"date":"",
-    "description":"",
-    "doc":""
+  {"date":"Convocatoria Pasada",
+    "description":"Otra convocatoria",
+    "doc":"chin0.pdf"
+  },
+  {"date":"Convocatoria Pasada",
+    "description":"Otra convocatoria ",
+    "doc":"chin0.pdf"
   }
-
 ]

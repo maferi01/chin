@@ -7,5 +7,6 @@
     {{meeting.description}}
   </p>
   <a *ngIf="meeting.doc" href="assets/{{meeting.doc}}" target="_blank" >Documento reunion -></a>
-  <iframe [src]=" 'assets/'+meeting.doc|safe   "  width="100%" height="900"> </iframe>
+  <iframe *ngIf="meeting.doc" [src]=" 'assets/'+meeting.doc|safe   "  width="98%" height="900"> </iframe>
 </div>
+
