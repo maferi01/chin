@@ -2,17 +2,20 @@
 .body{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 97vh;
   .header{
-    flex: 0 1 300px;
+    flex: 0 1 170px;
     background-image:  url("/assets/la-plaza-mayor.jpg");
     background-size: 100% 100%;
   }
   .main{
     flex: 1 1 0%;
     background-size: 100% 100%;
-
+    overflow: scroll;
   }
-
+  .footer{
+    flex: 0 1 40px;
+    background-color:darkgray;
+  }
 
 }
